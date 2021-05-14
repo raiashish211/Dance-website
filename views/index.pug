@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Ultra Dance Acedamy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+              img(src="/static/img/logologo.png", alt="dance logo")
+              | UDA
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info ]
+            li #[a(href="/") Contact Us ]
+
+    section#introsection 
+        div Welcome to 
+        div.name Ultra Dance Acedamy 
+        div Dance Dil Se
+
+    section#missionsection 
+        h2 Our Mission
+        div.card 
+          h3 Dance perfection 
+          div.card-box 
+            div.card-img 
+                img(src="/static/img/jazz.jpg")
+            div.card-content 
+              p This is the best dance academy
+        div.card 
+          h3 Dance the way you like
+          div.card-box 
+            div.card-img 
+                img(src="/static/img/unnamed (1).png")
+            div.card-content 
+              p This is the best dance academy
+        div.card 
+          h3 Expert teaching
+          div.card-box 
+            div.card-img 
+                img(src="/static/img/gd img.webp")
+            div.card-content 
+              p This is the best dance academy
+    section#spSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.webp", alt="sponsor image", Class="SpImage")
+            img(src="/static/img/logo2.jpg", alt="sponsor image", Class="SpImage")
+            img(src="/static/img/logo3.jpg", alt="sponsor image", Class="SpImage")
+            img(src="/static/img/logo4.png", alt="sponsor image", Class="SpImage")
+
+    footer#footer 
+        | Copyright © 2021 UltraDanceAcademy.com All rights reserved
+    script
+      include ../static/index.js
